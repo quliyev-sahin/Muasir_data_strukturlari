@@ -1,5 +1,7 @@
 # Muasir_data_strukturlari
 Data structure task
+Bu konsol tətbiqi proqramlaşdırmanın ən təməl 5 strukturunu və alqoritmini bir araya gətirərək, onların real həyat ssenarilərində necə istifadə olunduğunu, daxili iş mexanizmlərini və performans fərqlərini əyani şəkildə nümayiş etdirmək üçün dizayn edilmişdir.Tətbiqin funksiyaları, struktur seçimlərinin əsasları və performans ölçümlərinin nəticələri aşağıdakı kimidir:
+
 1. Array və Dynamic ArrayArray (Sabit həcmli): Yaddaşda sərt (ardıcıl) yer tutur. İndeks ilə birbaşa müraciət sürətlidir ($O(1)$), lakin ölçünü dəyişmək çətindir.Dynamic Array: Ölçüsü dolduqda avtomatik olaraq daha böyük yaddaş sahəsi ayırır və mövcud elementləri köçürür.Sonuna əlavə etmək (append): Amortizasiya olunmuş şəkildə $O(1)$ vaxt aparır.Əvvəle və ya orta yerə əlavə etmək (insert): Bütün sonrakı elementlərin sağa sürüşdürülməsi tələb olunduğu üçün $O(n)$ vaxt tələb edir.
 
 2. Singly və Doubly Linked ListSingly Linked List: Hər qovşaq özündən sonrakı elementin ünvanını (next) saxlayır. Yaddaşa qənaətcildir, lakin yalnız irəliyə doğru hərəkət etmək mümkündür.Doubly Linked List: Hər qovşaq həm sonrakı (next), həm də əvvəlki (prev) qovşağın ünvanını saxlayır. Geriyə hərəkət və silmə əməliyyatları daha rahatdır, lakin əlavə yaddaş tələb edir.
