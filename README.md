@@ -1,2 +1,11 @@
 # Muasir_data_strukturlari
 Data structure task
+1. Array və Dynamic ArrayArray (Sabit həcmli): Yaddaşda sərt (ardıcıl) yer tutur. İndeks ilə birbaşa müraciət sürətlidir ($O(1)$), lakin ölçünü dəyişmək çətindir.Dynamic Array: Ölçüsü dolduqda avtomatik olaraq daha böyük yaddaş sahəsi ayırır və mövcud elementləri köçürür.Sonuna əlavə etmək (append): Amortizasiya olunmuş şəkildə $O(1)$ vaxt aparır.Əvvəle və ya orta yerə əlavə etmək (insert): Bütün sonrakı elementlərin sağa sürüşdürülməsi tələb olunduğu üçün $O(n)$ vaxt tələb edir.
+
+2. Singly və Doubly Linked ListSingly Linked List: Hər qovşaq özündən sonrakı elementin ünvanını (next) saxlayır. Yaddaşa qənaətcildir, lakin yalnız irəliyə doğru hərəkət etmək mümkündür.Doubly Linked List: Hər qovşaq həm sonrakı (next), həm də əvvəlki (prev) qovşağın ünvanını saxlayır. Geriyə hərəkət və silmə əməliyyatları daha rahatdır, lakin əlavə yaddaş tələb edir.
+
+3. Stack, Queue və Deque TətbiqləriStack (LIFO - Son girən ilk çıxır): Mötərizələrin düzgün açılıb-bağlanmasını yoxlamaq (syntax parsing) üçün idealdır.Queue (FIFO - İlk girən ilk çıxır): Printer növbələri və ya tapşırıq planlayıcılarında (Task Scheduler) istifadə olunur.Deque (Double-ended Queue): Hər iki ucundan element əlavə edib-çıxarmağa imkan verir. Palindrom yoxlanılması və ya "Browser History" (geri-irəli düymələri) üçün əlverişlidir.
+
+4. Hash Table (Chaining üsulu)Hash funksiyası eyni indeksə düşən (collision) fərqli açarları birbaşa üst-üstə yazmır. Həmin indeksdə bir zəncir (linked list və ya siyahı) yaradaraq elementləri orada saxlayır.Axtarış və əlavə etmə zamanı əgər toqquşma azdırsa vaxt mürəkkəbliyi ortalama $O(1)$, ən pis halda isə $O(n)$ olur.
+
+5. Binary Search Tree (BST) və Sıralanmış Verilənlərin TəsiriƏməliyyatlar: Əlavə etmə (insert), Axtarış (search) və Silmə (delete) orta hesabla $O(\log n)$ mürəkkəbliyə malikdir.Sıralanmış verilənlərin əlavə edilməsinin təsiri: Əgər ağaca elementlər artıq sıralanmış şəkildə (məsələn: 10, 20, 30, 40, 50) əlavə olunarsa, ağac balansını itirərək çubuqvari (skewed tree) formaya düşür. Nəticədə ağacın hündürlüyü $n$-ə bərabər olur və bütün əməliyyatların sürəti $O(n)$-ə (adi siyahı kimi) enir. Bunun qarşısını almaq üçün AVL və ya Qırmızı-Qara ağaclar (Self-balancing trees) istifadə olunur.
