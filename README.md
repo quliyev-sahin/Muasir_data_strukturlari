@@ -16,11 +16,17 @@ Bu konsol tətbiqi proqramlaşdırmanın ən təməl 5 strukturunu və alqoritmi
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Bu 5 mövzunu bir araya gətirmək üçün real həyat ssenarisinə əsaslanan "Ağıllı Anbar və Sifariş İdarəetmə Sistemi" (Smart Warehouse & Order Management System) adlı vahid konsol tətbiqi dizayn edilmişdir:
+
 1.Hash Table (Chaining): Məhsulların kataloqunda SKU (məhsul kodu) vasitəsilə məlumatların sürətli ($O(1)$) axtarışı və toqquşmaların idarə edilməsi üçün.
+
 2.Binary Search Tree (BST): Anbarda məhsulların ID və ya qiymətə görə indekslənməsi və sürətli filtrlənməsi üçün.
+
 3.Queue və Deque: Müştəri sifarişlərinin növbəsi (Standart sifarişlər üçün Queue, təcili VIP sifarişlər üçün isə həm əvvəldən, həm sondan idarə olunan Deque).
+
 4.Stack: Anbarda edilən son əməliyyatların (məsələn, məhsul əlavəetmə/silmə) Undo (Geri al) mexanizmi ilə idarə olunması üçün.
+
 5.Array & Dynamic Array: Gün sonu hesabatlarının və toplu məlumatların yaddaşda saxlanılması və performans analizi üçün.
+
 6.Singly / Doubly Linked List: Məhsulun anbar daxilində daşınma mərhələlərinin (təchizatçı $\to$ rəf $\to$ qablaşdırma) izlənməsi üçün.
 
 Tətbiqin İşləmə Mexanizminin Qısa İzahı:
